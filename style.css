@@ -1,0 +1,120 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ff0000;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.overlay h1 {
+    font-size: 3em;
+    font-style: italic;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.image-section {
+    position: relative;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.image-section h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.text-section {
+    padding: 20px;
+}
+
+.team-members, .fleet-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.member, .fleet-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.member img, .fleet-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #ff0000;
+}
+
+button {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+.navbar {
+    background-color: #d60000; 
+    padding: 15px; 
+    text-align: center; 
+}
+
+.navbar ul {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.navbar a {
+    color: #ffffff; 
+    text-decoration: italic; 
+    font-weight: bold; 
+}
