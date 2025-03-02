@@ -33,7 +33,7 @@
             <input type="number" id="violations" name="violations" required>
 
             <label for="discord">IFC Username:</label>
-            <input type="text" id="IFC" name="discord" required>
+            <input type="text" id="ifc" name="ifc" required>
 
             <label for="if-subscription">Do you have an active Infinite Flight subscription?</label>
             <select id="if-subscription" name="if_subscription" required>
@@ -82,7 +82,7 @@
                             { name: "Landings in the past 90 days", value: data.landings.toString(), inline: true },
                             { name: "Violation Ratio", value: data.violation_ratio, inline: true },
                             { name: "Violations in the past year", value: data.violations.toString(), inline: true },
-                            { name: "Discord Username", value: data.discord, inline: true },
+                            { name: "IFC Username", value: data.ifc, inline: true },
                             { name: "Active Infinite Flight Subscription", value: data.if_subscription, inline: true },
                             { name: "Blacklisted by IFVARB", value: data.ifvarb, inline: true },
                             { name: "Active IFC Account", value: data.ifc_account, inline: true },
