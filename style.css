@@ -11,22 +11,15 @@ header {
     overflow: hidden;
 }
 
-.rainbow-background {
+#bg-video {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, red, white);
-    background-size: 200% 200%;
-    animation: swissColors 5s ease infinite;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
     z-index: -1;
-}
-
-@keyframes swissColors {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
 }
 
 .overlay {
